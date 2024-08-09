@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhuānjiā</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .error-message {
+            color: red;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <video class="video-background" autoplay loop muted>
+        <source src="webgsm.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="content">
+        <div class="container">
+            <span style="font-size: 90px;">Coding Competition 2024</span>
+            <span style="font-size: 90px; color: rgba(254, 93, 18, 0.853); align-self: center; text-shadow: 2px 4px 25px rgba(239, 22, 22, 0.992);">Zhuānjiā</span>
+            <span style="font-size: 50px;">Hint:</span>
+
+            <form id="passwordForm">
+                <div class="textbox">
+                    <input name="pass" type="text" id="passwordInput" autocomplete="off" required>
+                </div>
+                <button type="button" onclick="validatePassword()">SUBMIT</button>
+                <div id="error-message" class="error-message"><span style="font-size: 100px;">Wrong Answer</span></div>
+            </form>
+        </div>
+    </div>
+
+    <footer style="color: aliceblue; margin: 1px;">Designed By Vinayak</footer>
+
+    <script>
+        function validatePassword() {
+            const correctPassword = 'yAZ@agiTo&p'; // Replace with your actual password
+            const inputPassword = document.getElementById('passwordInput').value;
+            const errorMessage = document.getElementById('error-message');
+
+            if (inputPassword === correctPassword) {
+                // Redirect to questions.html if password is correct
+                window.location.href = 'questions.html';
+            } else {
+                // Show error message if password is incorrect
+                errorMessage.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

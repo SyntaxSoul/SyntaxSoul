@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+}
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the whole screen */
+    z-index: -1; /* Places the video behind other content */
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Places the content above the video */
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textbox {
+    width: 900px;
+    height: 50px;
+    background-color: rgb(28, 23, 26);
+    opacity: 70%;
+    border: 1px solid #970ad9;
+    border-radius: 8px;
+    padding: 0px; /*Added padding to prevent input text from touching the edges*/
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    transition: box-shadow 0.8s ease-in-out;
+}
+.textbox:hover,.textbox input:focus{
+   
+    box-shadow: inset 0px 0px 20px 3px rgba(11, 155, 245, 0.7), 0px 0px 90px 5px #fb0cef; /* Reduced the shadow size to make it more subtle */
+
+}
+.textbox input {
+    border: 0;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    outline: none; /* Removes the default focus outline */
+    color: rgb(15, 254, 234); /* Sets the text color to ensure visibility */
+    font-size: 20px; /* Adjusts font size for better readability */
+    padding: 0 10px; /* Horizontal padding for input text */
+    box-sizing: border-box; /* Includes padding in width calculation */
+    line-height: 30px; /* Vertically centers the text */
+    border-radius: 8px;
+    margin-bottom:5px;
+}
+
+button {
+    width: 150px;
+    height: 60px;
+    background-color: rgb(14, 222, 35);
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    color: rgb(226, 12, 187); /* Ensure text is visible on red background */
+    margin: 20px;
+    transition: box-shadow 0.1s ease-in-out;
+}
+button:hover{
+    box-shadow: 0px 0px 10px 5px rgb(14, 222, 35);
+}

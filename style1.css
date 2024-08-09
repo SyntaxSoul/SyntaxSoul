@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: scroll;
+    /* overflow: hidden; Prevents scrollbars if video or content overflows */
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the whole screen */
+    z-index: -1; /* Places the video behind other content */
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Places the content above the video */
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* To allow absolute positioning of button */
+}
+
+button {
+    background-color: rgb(14, 222, 35);
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    color: rgb(21, 18, 21); /* Ensure text is visible on red background */
+    margin: 20px;
+    transition: box-shadow 0.1s ease-in-out;
+}
+button:hover{
+    box-shadow: 0px 0px 10px 5px rgb(222, 14, 14);
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    width: 550px;
+    height: 350px;
+    background-color: rgb(96, 212, 193);
+    opacity: 90%;
+    margin: 20px;
+    border-radius: 8px;
+    transition: box-shadow 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    text-align: left;
+}
+.card span{
+    color: #000;
+    font-size: 16px;
+    align-self: flex-start;
+
+
+}
+.card:hover{
+    box-shadow: 0px 0px 15px 3px #17ce29;
+}
+
+
+
+#qn {
+    font-size: 20px;
+    color: #f62727;
+    margin: 5px;
+}
+
+#qstn {
+    color: #110e6c;
+    font-size: 12px;
+    margin: 5px;
+    opacity: 0; /* Hide the question text initially */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
+    position: relative;
+}
+
+#qstn:hover {
+    opacity: 1; /* Show the question text on hover */
+}
