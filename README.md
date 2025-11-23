@@ -1,16 +1,27 @@
-## Hi there 👋
+# Hi, I'm Vinayak 👋
 
-<!--
-**SyntaxSoul/SyntaxSoul** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Aspiring Java Developer**  
 
-Here are some ideas to get you started:
+I’m working on improving my Java, DSA, Spring Boot skills.  
+Currently completing a 21-day coding challenge and sharing my progress publicly.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## What I’m Focused On
+- Deepening Java fundamentals  
+- Building real projects with Spring Boot  
+- Improving DSA problem-solving  
+- Learning in public every day
+
+## Current Challenge
+**21 Days of Code**  
+Daily updates, small wins, and consistent progress.
+
+## Tech I'm Working With
+- Java  
+- Spring Boot  
+- Python  
+- MySQL  
+- Git & GitHub  
+
+## Connect With Me
+⭐ Stay tuned for my daily updates and new projects!
+
