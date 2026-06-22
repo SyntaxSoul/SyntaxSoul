@@ -18,7 +18,6 @@ Daily updates, small wins, and consistent progress.
 ## Tech I'm Working With
 - Java  
 - Spring Boot  
-- Python  
 - MySQL  
 - Git & GitHub  
 
